@@ -5,4 +5,8 @@ public class Main
     {
         System.out.println("hello world");
     }
+    
+    public static void oliverprintln(){
+        System.out.println("Izzy is super cool");
+    }    
 }
