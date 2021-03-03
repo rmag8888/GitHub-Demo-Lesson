@@ -1,10 +1,15 @@
 public class Main
 {
+    //Check my work
     // instance variables - replace the example below with your own
     //"You win GitHub"
     //reverse string: buHtiG niw uoY
-    //convert to binary: 01100010 01110101 01001000 01110100 01101001 01000111 00100000 01101110 01101001 01110111 00100000 01110101 01101111 01011001
-    //switch 1 and 0s:
+    //convert from binary to string: 0110001001110101010010000111010001101001010001110010000001101110011010010111011100100000011101010110111101011001
+    //switch 1 and 0s: 1001110110001010101101111000101110010110101110001101111110010001100101101000100011011111100010101001000010100110
+    //hexadecimal to binary 9D8AB78B96B8DF919688DF8A90A6
+    //substitute letters to numbers letters (remeber this is hexadecima A = 10, 0 translates to 0) imhakghkifkhmoiaifhhmoha0iaf
+    //change z to a: imhzkghkifkhmoizifhhmohzizf
+    //remove every third character begining at character 2 (0, 1, 2 <-- remove) imshzdkgfhkjifpkhxmouizdiffhhtmoqhzfizpf
     
     public static void main(){
         leah();
