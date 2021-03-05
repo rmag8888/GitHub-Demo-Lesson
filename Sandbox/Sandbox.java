@@ -1,12 +1,9 @@
 public class Sandbox
 {
-    public static void main()
+    public static void main(String[] args)
     {
         String str = "9D8ZB78B96B8DF919688DF8Z90Z6";
-        
-        
-        
-        
+
         String newString = "";
         for(int i = 0; i < str.length(); i++)
         {
