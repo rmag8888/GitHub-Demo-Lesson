@@ -18,8 +18,11 @@ public class Main
 	{
 		//remove every third character
 		String s = "";
-		for(int i=0;i<str.length();i++)
-			if((i+1)%3!=0) s+=str.charAt(i);
+		for(int i=0;i<str.length();i++){
+			if((i+1)%3!=0){ 
+				s+=str.charAt(i);
+			}
+		}
 		return s;
 	}
 
@@ -28,9 +31,13 @@ public class Main
 		//change all 'z' characters to 'k' characters
 		//don't worry about uppercase
 		String s = "";
-		for(int i=0;i<str.length();i++)
-			if(str.charAt(i)=='z') s+='k';
-			else s+= str.charAt(i);
+		for(int i=0;i<str.length();i++){
+			if(str.charAt(i)=='z'){
+			 s+='k';
+			} else {
+				s+= str.charAt(i);
+			}
+		}
 		return s;
 	}
 
@@ -43,9 +50,14 @@ public class Main
 		//Character.isDigit(char c) and/or Character.isLetter(char c) and/or Integer.toHexString(int n) may help
 		//don't worry about uppercase
 		String s = "";
-		for(int i=0;i<str.length();i++)
-			if(Character.isDigit(str.charAt(i)))s+=str.charAt(i);
-			else s+=Integer.toHexString((int)str.charAt(i)-96);
+		for(int i=0;i<str.length();i++){
+			if(Character.isDigit(str.charAt(i))){
+				s+=str.charAt(i);
+			}
+			else {
+				s+=Integer.toHexString((int)str.charAt(i)-96);
+			}
+		}
 		return s;
 	}
 
@@ -57,7 +69,7 @@ public class Main
 		//You can initialise a BigInteger with a String and specify that it's base 2 using BigInteger(str,2)
 		//BigInteger has a toString method and you can specify the radix (base system) as a parameter.
 		//For example: new BigInteger(str,2).toString(10) converts a binary string to a decimal string of the same value
-		return new BigInteger(str,16).toString(2);
+		return (String)(new BigInteger(str,16).toString(2));
 	}
 
 	public static String robert(String str)
@@ -65,9 +77,13 @@ public class Main
 		//switch the 1s and 0s in this string consisting of 1s and 0s
 		//you can assume the only characters in the string being passed in are either '1' or '0'
 		String s = "";
-		for(int i=0;i<str.length();i++)
-			if(str.charAt(i)=='0') s+='1';
-			else s+='0';
+		for(int i=0;i<str.length();i++){
+			if(str.charAt(i)=='0'){ 
+				s+='1';
+			} else {
+				s+='0';
+			}
+		}
 		return s;
 	}
 
@@ -81,8 +97,9 @@ public class Main
 		//For example int n = Integer.parseInt("4A",16) will evaluate to 74 in decimal
 		//and the value stored in n will be 74
 		String s = "";
-		for(int i=0;i<str.length();i+=8)
+		for(int i=0;i<str.length();i+=8){
 			s+=(char)Integer.parseInt(str.substring(i,i+8),2);
+		}
 		return s;
 	}
 
